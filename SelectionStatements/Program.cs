@@ -25,6 +25,7 @@ namespace SelectionStatements
             else if(guess != number)
             {
                 Console.WriteLine("Wrong!");
+                Console.WriteLine();
             }
             Console.WriteLine("What is your favorite subject?");
             string  subject = Console.ReadLine();
@@ -32,20 +33,30 @@ namespace SelectionStatements
             switch (subject)
             {
                 case "Math":
-                    Console.WriteLine("Needed subject");
+                    Console.WriteLine();
+                    Console.WriteLine("Much Needed subject");
                     break;
+
                 case "Science":
+                    Console.WriteLine();
                     Console.WriteLine("My favorite subject");
                     break;
+
                 case "Lunch":
+                    Console.WriteLine();
                     Console.WriteLine("Best time of day");
                     break;
+
                 case "Gym":
+                    Console.WriteLine();
                     Console.WriteLine("Everyone passes");
                     break;
-                case "History":
+
+                case "Detention":
+                    Console.WriteLine();
                     Console.WriteLine("Not popular");
                     break;
+
                     default: Console.WriteLine("Not Valid");
                     break ;
             }
